@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/webp" href="logo.webp">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Aços Puma Os</title>
+
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bi bi-exclude"></i>
+                <span class="logo-name">Aços Puma Os</span>
+            </div>
+            <i class="bi bi-list" id="btn"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="Index.html" target="_self">
+                    <i class="bi bi-clipboard-data"></i>
+                    <span class="nav-item">Visão Geral</span>
+                </a>
+                <span class="tooltip">Visão Geral</span>
+            </li>
+            <li>
+                <a href="Financeiro.html" target="_self">
+                    <i class="bi bi-cash-coin"></i>
+                    <span class="nav-item">Financeiro</span>
+                </a>
+                <span class="tooltip">Financeiro</span>
+            </li>
+            <li>
+                <a href="CRM_e_Cliente.html" target="_self">
+                    <i class="bi bi-bar-chart-steps"></i>
+                    <span class="nav-item">CRM e Cliente</span>
+                </a>
+                <span class="tooltip">CRM e Cliente</span>
+            </li>
+            <li>
+                <a href="Equipe_e_Acesso.html" target="_self">
+                    <i class="bi bi-person-vcard"></i>
+                    <span class="nav-item">Equipe e Acesso</span>
+                </a>
+                <span class="tooltip">Equipe e Acesso</span>
+            </li>
+            <li>
+                <a href="Configurações.html" target="_self">
+                    <i class="bi bi-toggles"></i>
+                    <span class="nav-item">Configurações</span>
+                </a>
+                <span class="tooltip">Configurações</span>
+            </li>
+        
+        </ul>
+        <ul>
+           <li>
+                <a href="#">
+                    <i class="bi bi-box-arrow-left"></i>
+                    <span class="nav-item">Sair</span>
+                </a>
+                <span class="tooltip">Sair</span>
+            </li>  
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Configurações</h1>
+        </div>
+        
+    </div>
+</body>
+
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active')
+    } 
+</script>
+
+
+</html>

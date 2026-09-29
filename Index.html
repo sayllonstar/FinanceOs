@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/webp" href="logo.webp">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Aços Puma Os</title>
+
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bi bi-exclude"></i>
+                <span class="logo-name">Aços Puma Os</span>
+            </div>
+            <i class="bi bi-list" id="btn"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="Index.html" target="_self">
+                    <i class="bi bi-clipboard-data"></i>
+                    <span class="nav-item">Visão Geral</span>
+                </a>
+                <span class="tooltip">Visão Geral</span>
+            </li>
+            <li>
+                <a href="Financeiro.html" target="_self">
+                    <i class="bi bi-cash-coin"></i>
+                    <span class="nav-item">Financeiro</span>
+                </a>
+                <span class="tooltip">Financeiro</span>
+            </li>
+            <li>
+                <a href="CRM_e_Cliente.html" target="_self">
+                    <i class="bi bi-bar-chart-steps"></i>
+                    <span class="nav-item">CRM e Cliente</span>
+                </a>
+                <span class="tooltip">CRM e Cliente</span>
+            </li>
+            <li>
+                <a href="Equipe_e_Acesso.html" target="_self">
+                    <i class="bi bi-person-vcard"></i>
+                    <span class="nav-item">Equipe e Acesso</span>
+                </a>
+                <span class="tooltip">Equipe e Acesso</span>
+            </li>
+            <li>
+                <a href="Configurações.html" target="_self">
+                    <i class="bi bi-toggles"></i>
+                    <span class="nav-item">Configurações</span>
+                </a>
+                <span class="tooltip">Configurações</span>
+            </li>
+
+        </ul>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bi bi-box-arrow-left"></i>
+                    <span class="nav-item">Sair</span>
+                </a>
+                <span class="tooltip">Sair</span>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="page-content active">
+        <header>
+            <div class="search-box">
+                <input type="text" class="search-text active" placeholder="Buscar pedidos, cliente, titulo... ">
+                <a href="#" class="search-btn">
+                    <i class="bi bi-search" alt="lupa"></i>
+                </a>
+            </div>
+            <div class="header-actions">
+                <div class="notificação">
+                    <i class="bi bi-bell"></i>
+                    <span class="badge"></span>
+                </div>
+                <div class="perfil">
+                    <span>Usuário</span>
+                    <h5>Admin</h5>
+                    <i class="bi bi-person-circle"></i>
+                </div>
+            </div>
+        </header>
+        <div class="Top-bomdia">
+            <div class="Text-bomdia">
+                    <section id="visao-geral"  >
+                        <div class="container">
+                            <h1>Bom dia</h1>
+                            <h5>Resumo operacional e financeiro da Aços Puma</h5>
+                        </div>
+                    </section>
+            </div>
+            <div class="">
+                <h1></h1>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active')
+    } 
+</script>
+
+
+</html>
